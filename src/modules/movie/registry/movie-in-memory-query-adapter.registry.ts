@@ -46,8 +46,10 @@ export class MovieInMemoryQueryAdapterRegistry extends MovieQueryRegistry {
       }
 
       if (genres) {
+        const genreNames = genres.in.map((genre) => genre.toLowerCase())
         const matchedGenres = item.genres.reduce(
-          (matchedCount, genre) => matchedCount + (genres.in.includes(genre) ? 1 : 0),
+          (matchedCount, genre) =>
+            matchedCount + (genreNames.includes(genre.toLowerCase()) ? 1 : 0),
           0
         )
 
