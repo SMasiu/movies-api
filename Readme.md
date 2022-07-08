@@ -10,15 +10,17 @@
 
 ## Project setup
 
-1. Create a `.env` file in the project root directory
+1. Run `yarn` to install dependencies
 
-2. Copy data from the `.env.template` file into the newly created `.env` file _(fill empty fields and make some changes if necessary)_
+2. Create a `.env` file in the project root directory
 
-3. Create a `db.json` file inside the `database` directory
+3. Copy data from the `.env.template` file into the newly created `.env` file _(fill empty fields and make some changes if necessary)_
 
-4. Copy data from `db-empty.json` or _(if you need some initial data)_ `db-init.json` into the `db.json` file
+4. Create a `db.json` file inside the `database` directory
 
-5. You are ready to go! Run `yarn dev` to start the development server or `docker-compose up` _(if you are using docker)_
+5. Copy data from `db-empty.json` or _(if you need some initial data)_ `db-init.json` into the `db.json` file
+
+6. You are ready to go! Run `yarn dev` to start the development server or `docker-compose up` _(if you are using docker)_
 
 ## Build project
 
