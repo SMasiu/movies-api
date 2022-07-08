@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es2015",
+    "experimentalDecorators": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": false,
+    "outDir": "./dist",
+    "skipLibCheck": true,
+    "baseUrl": "."
+  }
+}

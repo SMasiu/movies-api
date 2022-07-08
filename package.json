@@ -1,0 +1,48 @@
+{
+  "name": "movies-api",
+  "description": "movies-api",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc --p tsconfig.app.json",
+    "start": "node dist/index.js",
+    "dev": "nodemon",
+    "lint": "prettier --write .",
+    "test": "jest",
+    "postinstall": "husky install"
+  },
+  "author": "Szymon Masko",
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "@types/express": "^4.17.13",
+    "@types/jest": "^28.1.4",
+    "@types/method-override": "^0.0.32",
+    "@types/node": "^18.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.30.5",
+    "@typescript-eslint/parser": "^5.30.5",
+    "eslint": "^8.19.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "jest": "^28.1.2",
+    "lint-staged": "^13.0.3",
+    "nodemon": "^2.0.18",
+    "prettier": "^2.7.1",
+    "ts-jest": "^28.0.5",
+    "ts-node": "^10.8.2",
+    "typescript": "^4.6.2",
+    "husky": "^8.0.1"
+  },
+  "dependencies": {
+    "@tshio/command-bus": "^1.0.4",
+    "@tshio/query-bus": "^1.0.4",
+    "awilix": "^7.0.3",
+    "body-parser": "^1.20.0",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.13.2",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "helmet": "^5.1.0"
+  }
+}
